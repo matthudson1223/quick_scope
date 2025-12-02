@@ -15,7 +15,7 @@ Build a modular, extensible stock analysis tool that:
 ## Architecture Overview
 
 ```
-stockscope/
+quickscope/
 ├── main.py                 # CLI entry point
 ├── config.py               # API keys, settings
 ├── data/
@@ -182,7 +182,7 @@ Each strategy output should include:
 Implement `main.py` using Typer:
 
 ```
-stockscope analyze TICKER [OPTIONS]
+quickscope analyze TICKER [OPTIONS]
 
 Options:
   --risk [conservative|moderate|aggressive]
@@ -256,16 +256,16 @@ Note: The core functionality works with just yfinance (no API key needed). Addit
 
 ```bash
 # Basic analysis with defaults
-stockscope analyze AAPL
+quickscope analyze AAPL
 
 # Aggressive options-based strategy
-stockscope analyze TSLA --risk aggressive --strategy options_based
+quickscope analyze TSLA --risk aggressive --strategy options_based
 
 # Conservative analysis with specific portfolio size
-stockscope analyze MSFT --risk conservative --portfolio-size 50000
+quickscope analyze MSFT --risk conservative --portfolio-size 50000
 
 # Output as JSON for further processing
-stockscope analyze NVDA --output json > nvda_analysis.json
+quickscope analyze NVDA --output json > nvda_analysis.json
 ```
 
 ## Development Notes
