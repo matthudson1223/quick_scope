@@ -1,0 +1,8 @@
+# Phase 1 dependencies (Data Layer only)
+yfinance
+pandas
+numpy
+requests
+python-dotenv
+rich
+duckdb

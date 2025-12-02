@@ -1,0 +1,11 @@
+yfinance
+pandas
+numpy
+requests
+python-dotenv
+rich
+typer
+transformers
+torch
+scipy
+duckdb
